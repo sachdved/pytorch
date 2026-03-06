@@ -148,12 +148,12 @@ function updateGraph() {
     document.getElementById('node-count').textContent = filteredData.nodes.length;
     document.getElementById('edge-count').textContent = filteredData.edges.length;
 
-    // Create simulation
+    // Create simulation with better parameters for layout
     simulation = d3.forceSimulation(filteredData.nodes)
-        .force("link", d3.forceLink(filteredData.edges).id(d => d.id).distance(100))
-        .force("charge", d3.forceManyBody().strength(-300))
+        .force("link", d3.forceLink(filteredData.edges).id(d => d.id).distance(150).strength(0.5))
+        .force("charge", d3.forceManyBody().strength(-400))
         .force("center", d3.forceCenter(svg.attr("width") / 2, svg.attr("height") / 2))
-        .force("collision", d3.forceCollide().radius(20));
+        .force("collision", d3.forceCollide().radius(25));
 
     // Create edges
     const link = g.append("g")
@@ -174,7 +174,7 @@ function updateGraph() {
         .enter()
         .append("circle")
         .attr("class", "node")
-        .attr("r", 8)
+        .attr("r", 10)
         .attr("fill", d => NODE_TYPE_COLORS[d.type] || NODE_TYPE_COLORS['other'])
         .call(d3.drag()
             .on("start", dragStarted)
