@@ -1,0 +1,24 @@
+[
+  {
+    "name": "QuantizedLinear",
+    "type": "class",
+    "module": "torch.nn.quantized.modules.linear",
+    "inherits_from": "Linear",
+    "imports": [
+      "torch.nn.Module",
+      "torch.nn.functional as F"
+    ],
+    "description": "Quantized version of Linear module for efficient inference",
+    "context": null,
+    "created_at": "now",
+    "validation": {
+      "is_valid": true,
+      "errors": [],
+      "warnings": [
+        "Imported component 'torch.nn.Module' not found in knowledge graph",
+        "Imported component 'torch.nn.functional as F' not found in knowledge graph"
+      ],
+      "suggestions": []
+    }
+  }
+]

@@ -1,0 +1,1622 @@
+{
+  "nodes": [
+    {
+      "id": "torch",
+      "name": "torch",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/__init__.py",
+      "description": "Main PyTorch module - entry point for all PyTorch functionality"
+    },
+    {
+      "id": "torch.tensor",
+      "name": "tensor",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_tensor.py",
+      "description": "Creates a new tensor with optional data, dtype, and device"
+    },
+    {
+      "id": "torch.nn.Module",
+      "name": "Module",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/module.py",
+      "description": "Base class for all neural network modules. Contains methods for forward pass, parameter registration, and module management"
+    },
+    {
+      "id": "torch.nn.modules.container",
+      "name": "container",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/container.py",
+      "description": "Container modules: Sequential, ModuleList, ModuleDict"
+    },
+    {
+      "id": "torch.nn.modules.functional",
+      "name": "functional",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/functional.py",
+      "description": "Functional API for neural network operations (no trainable parameters)"
+    },
+    {
+      "id": "torch.nn.modules.conv",
+      "name": "conv",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/conv.py",
+      "description": "Convolutional layers: Conv1d, Conv2d, Conv3d, ConvTranspose1d, etc."
+    },
+    {
+      "id": "torch.nn.modules.normalization",
+      "name": "normalization",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/normalization.py",
+      "description": "Normalization layers: LayerNorm, GroupNorm, RMSNorm, etc."
+    },
+    {
+      "id": "torch.nn.modules.activation",
+      "name": "activation",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/activation.py",
+      "description": "Activation functions: ReLU, LeakyReLU, GELU, Tanh, etc."
+    },
+    {
+      "id": "torch.nn.modules.pooling",
+      "name": "pooling",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/pooling.py",
+      "description": "Pooling layers: MaxPool1d, MaxPool2d, AvgPool1d, etc."
+    },
+    {
+      "id": "torch.nn.modules.rnn",
+      "name": "rnn",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/rnn.py",
+      "description": "RNN layers: RNN, LSTM, GRU and their cell variants"
+    },
+    {
+      "id": "torch.nn.modules.transformer",
+      "name": "transformer",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/transformer.py",
+      "description": "Transformer modules: Transformer, TransformerEncoder, TransformerDecoder, TransformerEncoderLayer, TransformerDecoderLayer"
+    },
+    {
+      "id": "torch.nn.modules.sparse",
+      "name": "sparse",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/sparse.py",
+      "description": "Sparse embedding layers: Embedding, EmbeddingBag"
+    },
+    {
+      "id": "torch.nn.modules.loss",
+      "name": "loss",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/loss.py",
+      "description": "Loss functions: MSELoss, CrossEntropyLoss, BCEWithLogitsLoss, etc."
+    },
+    {
+      "id": "torch.nn.modules.dropout",
+      "name": "dropout",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/dropout.py",
+      "description": "Dropout layers: Dropout, Dropout1d, Dropout2d, Dropout3d"
+    },
+    {
+      "id": "torch.nn.modules.padding",
+      "name": "padding",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/padding.py",
+      "description": "Padding layers: ZeroPad2d, ConstantPad3d, ReflectionPad2d, ReplicationPad2d"
+    },
+    {
+      "id": "torch.nn.modules.upsampling",
+      "name": "upsampling",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/modules/upsampling.py",
+      "description": "Upsampling layers: Upsample, UpsamplingNearest2d, UpsamplingBilinear2d"
+    },
+    {
+      "id": "torch.fx.Graph",
+      "name": "Graph",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/fx/graph.py",
+      "description": "FX graph representation - intermediate representation for torch operations"
+    },
+    {
+      "id": "torch.fx.GraphModule",
+      "name": "GraphModule",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/fx/graph_module.py",
+      "description": "GraphModule extends nn.Module with a Graph for the forward method"
+    },
+    {
+      "id": "torch.fx.Node",
+      "name": "Node",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/fx/node.py",
+      "description": "Represents a node in the FX graph: placeholder, call_method, call_module, call_function, get_attr, output"
+    },
+    {
+      "id": "torch.fx.Tracer",
+      "name": "Tracer",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/fx/_symbolic_trace.py",
+      "description": "Symbolic tracer for capturing module behavior into FX graphs"
+    },
+    {
+      "id": "torch.fx.Proxy",
+      "name": "Proxy",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/fx/proxy.py",
+      "description": "Proxy class for symbolic tracing - wraps tensors to record operations"
+    },
+    {
+      "id": "torch.autograd.Function",
+      "name": "Function",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/autograd/function.py",
+      "description": "Base class for custom autograd functions. Implements forward and backward methods"
+    },
+    {
+      "id": "torch.autograd.backward",
+      "name": "backward",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/autograd/__init__.py",
+      "description": "Computes gradients of outputs with respect to inputs"
+    },
+    {
+      "id": "torch.autograd.grad",
+      "name": "grad",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/autograd/__init__.py",
+      "description": "Computes gradients and returns them without accumulating in .grad"
+    },
+    {
+      "id": "torch._dynamo.OptimizedModule",
+      "name": "OptimizedModule",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/eval_frame.py",
+      "description": "Module wrapper for compiled TorchDynamo code"
+    },
+    {
+      "id": "torch._dynamo.eval_frame",
+      "name": "eval_frame",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/eval_frame.py",
+      "description": "Frame evaluation handler - core TorchDynamo component"
+    },
+    {
+      "id": "torch._dynamo.convert_frame",
+      "name": "convert_frame",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/convert_frame.py",
+      "description": "Frame to FX graph conversion logic"
+    },
+    {
+      "id": "torch._dynamo.config",
+      "name": "config",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/config.py",
+      "description": "TorchDynamo configuration options"
+    },
+    {
+      "id": "torch._dynamo.decorators",
+      "name": "decorators",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/decorators.py",
+      "description": "Decorators for controlling TorchDynamo: @torch.compile, @torch.no_grad, @torch.enable_grad"
+    },
+    {
+      "id": "torch._dynamo.aot_compile",
+      "name": "aot_compile",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/aot_compile.py",
+      "description": "Ahead-of-time compilation utilities"
+    },
+    {
+      "id": "torch._inductor.compile_fx",
+      "name": "compile_fx",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/compile_fx.py",
+      "description": "Inductor compilation pipeline for FX graphs"
+    },
+    {
+      "id": "torch._inductor.graph",
+      "name": "graph",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/graph.py",
+      "description": "Inductor graph representation and optimization"
+    },
+    {
+      "id": "torch._inductor.ir",
+      "name": "ir",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/ir.py",
+      "description": "Intermediate representation for Inductor: TensorBox, StorageBox, InputBuffer, etc."
+    },
+    {
+      "id": "torch._inductor.lowering",
+      "name": "lowering",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/lowering.py",
+      "description": "Operator lowering to backend-specific code"
+    },
+    {
+      "id": "torch._inductor.codecache",
+      "name": "codecache",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/codecache.py",
+      "description": "Code generation and caching for compiled kernels"
+    },
+    {
+      "id": "torch._inductor.config",
+      "name": "config",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/config.py",
+      "description": "Inductor configuration options"
+    },
+    {
+      "id": "torch._inductor.utils",
+      "name": "utils",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/utils.py",
+      "description": "Inductor utility functions for debugging and optimization"
+    },
+    {
+      "id": "torch._inductor.virtualized",
+      "name": "virtualized",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/virtualized.py",
+      "description": "Virtualized computation for autograd and performance"
+    },
+    {
+      "id": "torch._inductor.ops_handler",
+      "name": "ops_handler",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/ops_handler.py",
+      "description": "Operator handling and decomposition"
+    },
+    {
+      "id": "torch._inductor.kernel_template_choice",
+      "name": "kernel_template_choice",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/kernel_template_choice.py",
+      "description": "Kernel template selection and specialization"
+    },
+    {
+      "id": "torch._inductor.scheduler",
+      "name": "scheduler",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/scheduler.py",
+      "description": "Task scheduling and GPU memory management"
+    },
+    {
+      "id": "torch._inductor.comm_analysis",
+      "name": "comm_analysis",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/comm_analysis.py",
+      "description": "Communication analysis for distributed training"
+    },
+    {
+      "id": "torch._inductor.comms",
+      "name": "comms",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/comms.py",
+      "description": "Communication primitives for distributed training"
+    },
+    {
+      "id": "torch._inductor.distributed_autotune",
+      "name": "distributed_autotune",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/distributed_autotune.py",
+      "description": "Distributed autotuning for collective operations"
+    },
+    {
+      "id": "torch._inductor.freezing",
+      "name": "freezing",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/freezing.py",
+      "description": "Freezing model weights for deployment"
+    },
+    {
+      "id": "torch._inductor.decomposition",
+      "name": "decomposition",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/decomposition.py",
+      "description": "Operator decomposition for optimization"
+    },
+    {
+      "id": "torch._inductor.pattern_matcher",
+      "name": "pattern_matcher",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/pattern_matcher.py",
+      "description": "Graph pattern matching for optimizations"
+    },
+    {
+      "id": "torch._inductor.memory",
+      "name": "memory",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/memory.py",
+      "description": "Memory management and allocation"
+    },
+    {
+      "id": "torch._inductor.shape_propagation",
+      "name": "shape_propagation",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/shape_propagation.py",
+      "description": "Shape and dtype propagation for optimizations"
+    },
+    {
+      "id": "torch._inductor.dtype_propagation",
+      "name": "dtype_propagation",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/dtype_propagation.py",
+      "description": "Data type propagation and promotion"
+    },
+    {
+      "id": "torch._inductor.optimize_indexing",
+      "name": "optimize_indexing",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/optimize_indexing.py",
+      "description": "Index optimization for memory access patterns"
+    },
+    {
+      "id": "torch._inductor.bounds",
+      "name": "bounds",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/bounds.py",
+      "description": "Bounds analysis for loop optimizations"
+    },
+    {
+      "id": "torch._inductor.index_propagation",
+      "name": "index_propagation",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/index_propagation.py",
+      "description": "Index propagation and analysis"
+    },
+    {
+      "id": "torch._inductor.sizevars",
+      "name": "sizevars",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/sizevars.py",
+      "description": "Size variable analysis for dynamic shapes"
+    },
+    {
+      "id": "torch._inductor.cudagraph_trees",
+      "name": "cudagraph_trees",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/cudagraph_trees.py",
+      "description": "CUDA graph management and reuse"
+    },
+    {
+      "id": "torch._inductor.custom_graph_pass",
+      "name": "custom_graph_pass",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/custom_graph_pass.py",
+      "description": "Custom graph transformation passes"
+    },
+    {
+      "id": "torch._inductor.jagged_lowerings",
+      "name": "jagged_lowerings",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/jagged_lowerings.py",
+      "description": "Lowering for ragged (jagged) tensor operations"
+    },
+    {
+      "id": "torch._inductor.mkldnn_ir",
+      "name": "mkldnn_ir",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/mkldnn_ir.py",
+      "description": "MKL-DNN intermediate representation"
+    },
+    {
+      "id": "torch._inductor.mkldnn_lowerings",
+      "name": "mkldnn_lowerings",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/mkldnn_lowerings.py",
+      "description": "MKL-DNN kernel lowering"
+    },
+    {
+      "id": "torch._inductor.comm_lowering",
+      "name": "comm_lowering",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/comm_lowering.py",
+      "description": "Communication operation lowering"
+    },
+    {
+      "id": "torch._inductor.triton_bundler",
+      "name": "triton_bundler",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/triton_bundler.py",
+      "description": "Triton kernel bundling and compilation"
+    },
+    {
+      "id": "torch._inductor.compiler_bisector",
+      "name": "compiler_bisector",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/compiler_bisector.py",
+      "description": "Compiler error diagnosis and bisecting"
+    },
+    {
+      "id": "torch._inductor.fuzzer",
+      "name": "fuzzer",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/fuzzer.py",
+      "description": "Fuzz testing utilities"
+    },
+    {
+      "id": "torch._inductor.test_operators",
+      "name": "test_operators",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/test_operators.py",
+      "description": "Operator testing utilities"
+    },
+    {
+      "id": "torch._inductor.test_case",
+      "name": "test_case",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/test_case.py",
+      "description": "Test case utilities"
+    },
+    {
+      "id": "torch._inductor.aot_compile_ext",
+      "name": "aot_compile_ext",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/compile_fx_ext.py",
+      "description": "Extended AOT compilation functionality"
+    },
+    {
+      "id": "torch._inductor.compile_fx_async",
+      "name": "compile_fx_async",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/compile_fx_async.py",
+      "description": "Asynchronous compilation pipeline"
+    },
+    {
+      "id": "torch._inductor.async_compile",
+      "name": "async_compile",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/async_compile.py",
+      "description": "Asynchronous compilation utilities"
+    },
+    {
+      "id": "torch._inductor.aoti_eager",
+      "name": "aoti_eager",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/aoti_eager.py",
+      "description": "AOTI eager mode execution"
+    },
+    {
+      "id": "torch._inductor.choicerule",
+      "name": "choicerule",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/choices.py",
+      "description": "Choice rule engine for kernel selection"
+    },
+    {
+      "id": "torch._inductor.select_algorithm",
+      "name": "select_algorithm",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/select_algorithm.py",
+      "description": "Algorithm selection for kernels"
+    },
+    {
+      "id": "torch._inductor.deps",
+      "name": "deps",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/dependencies.py",
+      "description": "Dependency analysis"
+    },
+    {
+      "id": "torch._inductor.debug",
+      "name": "debug",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/debug.py",
+      "description": "Debugging utilities"
+    },
+    {
+      "id": "torch._inductor.hooks",
+      "name": "hooks",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/hooks.py",
+      "description": "Hook utilities for debugging and profiling"
+    },
+    {
+      "id": "torch._inductor.exc",
+      "name": "exc",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/exc.py",
+      "description": "Exception handling and error reporting"
+    },
+    {
+      "id": "torch._inductor.runtime",
+      "name": "runtime",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/runtime/",
+      "description": "Runtime utilities"
+    },
+    {
+      "id": "torch._inductor.metrics",
+      "name": "metrics",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/metrics.py",
+      "description": "Metrics collection and profiling"
+    },
+    {
+      "id": "torch._inductor.backend_registration",
+      "name": "backend_registration",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_inductor/backend_registration.py",
+      "description": "Backend registration and discovery"
+    },
+    {
+      "id": "torch._dynamo.callback",
+      "name": "callback",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/callback.py",
+      "description": "Compilation callbacks for monitoring and debugging"
+    },
+    {
+      "id": "torch._dynamo.bytecode_analysis",
+      "name": "bytecode_analysis",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/bytecode_analysis.py",
+      "description": "Bytecode analysis for graph extraction"
+    },
+    {
+      "id": "torch._dynamo.bytecode_transformation",
+      "name": "bytecode_transformation",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/bytecode_transformation.py",
+      "description": "Bytecode transformation utilities"
+    },
+    {
+      "id": "torch._dynamo.codegen",
+      "name": "codegen",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/codegen.py",
+      "description": "Code generation for compiled backends"
+    },
+    {
+      "id": "torch._dynamo.guards",
+      "name": "guards",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/guards.py",
+      "description": "Guard management for recompilation"
+    },
+    {
+      "id": "torch._dynamo.utils",
+      "name": "utils",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/utils.py",
+      "description": "TorchDynamo utilities"
+    },
+    {
+      "id": "torch._dynamo.source",
+      "name": "source",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/source.py",
+      "description": "Source code utilities"
+    },
+    {
+      "id": "torch._dynamo.graph_utils",
+      "name": "graph_utils",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/graph_utils.py",
+      "description": "Graph manipulation utilities"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.optimized_module",
+      "name": "OptimizedModule",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/eval_frame.py",
+      "description": "Module wrapper for compiled TorchDynamo code"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.optimized_function",
+      "name": "OptimizedFunction",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/eval_frame.py",
+      "description": "Function wrapper for compiled TorchDynamo code"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.graph_break",
+      "name": "graph_break",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/decorators.py",
+      "description": "Decorator to signal graph break points"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.mark_dynamic",
+      "name": "mark_dynamic",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/decorators.py",
+      "description": "Decorator to mark dynamic dimensions"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.mark_static",
+      "name": "mark_static",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/decorators.py",
+      "description": "Decorator to mark static dimensions"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.skip_frame",
+      "name": "skip_frame",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/decorators.py",
+      "description": "Decorator to skip frame from compilation"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.error_on_graph_break",
+      "name": "error_on_graph_break",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/decorators.py",
+      "description": "Decorator to throw error on graph break"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.disable",
+      "name": "disable",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/decorators.py",
+      "description": "Decorator to disable TorchDynamo"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.run",
+      "name": "run",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/decorators.py",
+      "description": "Decorator to run without compilation"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.optimize",
+      "name": "optimize",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/eval_frame.py",
+      "description": "Optimize a function with TorchDynamo"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.export",
+      "name": "export",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/eval_frame.py",
+      "description": "Export function to FX graph"
+    },
+    {
+      "id": "torch._dynamo.eval_frame.explain",
+      "name": "explain",
+      "type": "function",
+      "path": "/home/sachdved/Documents/pytorch/torch/_dynamo/eval_frame.py",
+      "description": "Explain compilation results"
+    },
+    {
+      "id": "torch.optim.optimizer",
+      "name": "Optimizer",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/optimizer.py",
+      "description": "Base optimizer class for parameter updates"
+    },
+    {
+      "id": "torch.optim.lr_scheduler",
+      "name": "LRScheduler",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/lr_scheduler.py",
+      "description": "Learning rate scheduler base class"
+    },
+    {
+      "id": "torch.optim.sgd",
+      "name": "SGD",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/sgd.py",
+      "description": "Stochastic Gradient Descent optimizer"
+    },
+    {
+      "id": "torch.optim.adam",
+      "name": "Adam",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/adam.py",
+      "description": "Adam optimizer with adaptive learning rates"
+    },
+    {
+      "id": "torch.optim.adamw",
+      "name": "AdamW",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/adamw.py",
+      "description": "AdamW optimizer (decoupled weight decay)"
+    },
+    {
+      "id": "torch.optim.adamax",
+      "name": "Adamax",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/adamax.py",
+      "description": "Adamax optimizer variant"
+    },
+    {
+      "id": "torch.optim.nadam",
+      "name": "NAdam",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/nadam.py",
+      "description": "NAdam optimizer (Nesterov Adam)"
+    },
+    {
+      "id": "torch.optim.radam",
+      "name": "RAdam",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/radam.py",
+      "description": "RAdam optimizer (Rectified Adam)"
+    },
+    {
+      "id": "torch.optim.rmsprop",
+      "name": "RMSprop",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/rmsprop.py",
+      "description": "RMSprop optimizer"
+    },
+    {
+      "id": "torch.optim.adadelta",
+      "name": "Adadelta",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/adadelta.py",
+      "description": "Adadelta optimizer"
+    },
+    {
+      "id": "torch.optim.adagrad",
+      "name": "Adagrad",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/adagrad.py",
+      "description": "Adagrad optimizer"
+    },
+    {
+      "id": "torch.optim.lbfgs",
+      "name": "LBFGS",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/lbfgs.py",
+      "description": "L-BFGS optimizer"
+    },
+    {
+      "id": "torch.optim.asgd",
+      "name": "ASGD",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/asgd.py",
+      "description": "Averaged Stochastic Gradient Descent"
+    },
+    {
+      "id": "torch.optim.rprop",
+      "name": "Rprop",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/rprop.py",
+      "description": "Rprop optimizer"
+    },
+    {
+      "id": "torch.optim.sparse_adam",
+      "name": "SparseAdam",
+      "type": "class",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/sparse_adam.py",
+      "description": "Sparse Adam for sparse gradients"
+    },
+    {
+      "id": "torch.optim.swa_utils",
+      "name": "swa_utils",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/optim/swa_utils.py",
+      "description": "Stochastic Weight Averaging utilities"
+    },
+    {
+      "id": "torch.functional",
+      "name": "functional",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/functional.py",
+      "description": "Functional API for torch operations"
+    },
+    {
+      "id": "torch.library",
+      "name": "library",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/library.py",
+      "description": "PyTorch library and operator registration"
+    },
+    {
+      "id": "torch.serialization",
+      "name": "serialization",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/serialization.py",
+      "description": "Tensor and module serialization"
+    },
+    {
+      "id": "torch.export",
+      "name": "export",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/export",
+      "description": "Model export functionality"
+    },
+    {
+      "id": "torch.utils.checkpoint",
+      "name": "checkpoint",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/utils/checkpoint.py",
+      "description": "Gradient checkpointing utilities"
+    },
+    {
+      "id": "torch.utils.hooks",
+      "name": "hooks",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/utils/hooks.py",
+      "description": "Hook utilities for modules and tensors"
+    },
+    {
+      "id": "torch.utils.pytree",
+      "name": "pytree",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/utils/_pytree.py",
+      "description": "Pytree utilities for nested structure handling"
+    },
+    {
+      "id": "torch.nn.parameter",
+      "name": "parameter",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/parameter.py",
+      "description": "Parameter and buffer classes for modules"
+    },
+    {
+      "id": "torch.nn.init",
+      "name": "init",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/init.py",
+      "description": "Parameter initialization utilities"
+    },
+    {
+      "id": "torch.nn.grad",
+      "name": "grad",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/grad.py",
+      "description": "Gradient utilities for modules"
+    },
+    {
+      "id": "torch.nn._reduction",
+      "name": "_reduction",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/_reduction.py",
+      "description": "Reduction operations"
+    },
+    {
+      "id": "torch.nn.utils",
+      "name": "utils",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/nn/utils.py",
+      "description": "Neural network utilities"
+    },
+    {
+      "id": "torch._C",
+      "name": "_C",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_C/",
+      "description": "C++ extension - core PyTorch C++ API"
+    },
+    {
+      "id": "torch._ops",
+      "name": "_ops",
+      "type": "module",
+      "path": "/home/sachdved/Documents/pytorch/torch/_ops.py",
+      "description": "Operator registration and lookup"
+    }
+  ],
+  "edges": [
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.container.Sequential",
+      "metadata": {"comment": "Sequential inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.conv._ConvNd",
+      "metadata": {"comment": "Conv layers inherit from _ConvNd"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.conv.Conv1d",
+      "metadata": {"comment": "Conv1d inherits from _ConvNd"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.conv.Conv2d",
+      "metadata": {"comment": "Conv2d inherits from _ConvNd"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.conv.Conv3d",
+      "metadata": {"comment": "Conv3d inherits from _ConvNd"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.conv.ConvTranspose1d",
+      "metadata": {"comment": "ConvTranspose1d inherits from _ConvTransposeNd"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.normalization.LayerNorm",
+      "metadata": {"comment": "LayerNorm inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.normalization.GroupNorm",
+      "metadata": {"comment": "GroupNorm inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.normalization.RMSNorm",
+      "metadata": {"comment": "RMSNorm inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.activation.ReLU",
+      "metadata": {"comment": "ReLU inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.activation.GELU",
+      "metadata": {"comment": "GELU inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.pooling._MaxPoolNd",
+      "metadata": {"comment": "MaxPool layers inherit from _MaxPoolNd"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.rnn.RNNBase",
+      "metadata": {"comment": "RNN layers inherit from RNNBase"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.rnn.RNN",
+      "metadata": {"comment": "RNN inherits from RNNBase"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.rnn.LSTM",
+      "metadata": {"comment": "LSTM inherits from RNNBase"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.rnn.GRU",
+      "metadata": {"comment": "GRU inherits from RNNBase"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.transformer.Transformer",
+      "metadata": {"comment": "Transformer inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.transformer.TransformerEncoder",
+      "metadata": {"comment": "TransformerEncoder inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.transformer.TransformerDecoder",
+      "metadata": {"comment": "TransformerDecoder inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.sparse.Embedding",
+      "metadata": {"comment": "Embedding inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.sparse.EmbeddingBag",
+      "metadata": {"comment": "EmbeddingBag inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.loss.MSELoss",
+      "metadata": {"comment": "MSELoss inherits from Module"}
+    },
+    {
+      "type": "inherits",
+      "source": "torch.nn.modules.module.Module",
+      "target": "torch.nn.modules.loss.CrossEntropyLoss",
+      "metadata": {"comment": "CrossEntropyLoss inherits from Module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.nn",
+      "target": "torch.nn.functional",
+      "metadata": {"comment": "nn module imports functional API"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo.convert_frame",
+      "metadata": {"comment": "eval_frame uses convert_frame for graph conversion"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo.guards",
+      "metadata": {"comment": "eval_frame uses guards for guard management"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.graph",
+      "metadata": {"comment": "compile_fx uses graph module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.ir",
+      "metadata": {"comment": "compile_fx uses IR module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.lowering",
+      "metadata": {"comment": "compile_fx uses lowering module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._dynamo",
+      "metadata": {"comment": "compile_fx uses dynamo modules"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.graph",
+      "target": "torch._inductor.ir",
+      "metadata": {"comment": "graph uses IR module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.graph",
+      "target": "torch._inductor.lowering",
+      "metadata": {"comment": "graph uses lowering module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.graph",
+      "target": "torch.fx",
+      "metadata": {"comment": "graph uses FX modules"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.graph",
+      "target": "torch._dynamo",
+      "metadata": {"comment": "graph uses dynamo modules"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.decomposition",
+      "metadata": {"comment": "compile_fx uses decomposition module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.pattern_matcher",
+      "metadata": {"comment": "compile_fx uses pattern matcher"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.memory",
+      "metadata": {"comment": "compile_fx uses memory module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.codecache",
+      "metadata": {"comment": "compile_fx uses codecache module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.scheduler",
+      "metadata": {"comment": "compile_fx uses scheduler module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor.cudagraph_trees",
+      "metadata": {"comment": "compile_fx uses cudagraph module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo.bytecode_analysis",
+      "metadata": {"comment": "eval_frame uses bytecode analysis"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo.bytecode_transformation",
+      "metadata": {"comment": "eval_frame uses bytecode transformation"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo.codegen",
+      "metadata": {"comment": "eval_frame uses codegen"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo.callback",
+      "metadata": {"comment": "eval_frame uses callbacks"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo.guards",
+      "metadata": {"comment": "eval_frame uses guards"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo.utils",
+      "metadata": {"comment": "eval_frame uses dynamo utils"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch.fx",
+      "metadata": {"comment": "eval_frame uses FX modules"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch.autograd",
+      "metadata": {"comment": "eval_frame uses autograd"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.optim.optimizer",
+      "target": "torch.nn.parameter",
+      "metadata": {"comment": "Optimizer uses Parameter class"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.optim.optimizer",
+      "target": "torch.nn.modules.module",
+      "metadata": {"comment": "Optimizer uses Module class"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.optim.lr_scheduler",
+      "target": "torch.optim.optimizer",
+      "metadata": {"comment": "LRScheduler inherits from Optimizer"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._C",
+      "target": "torch._ops",
+      "metadata": {"comment": "C extension uses ops module"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.autograd.backward",
+      "target": "torch._engine_run_backward",
+      "metadata": {"comment": "backward calls engine's backward function"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.autograd.grad",
+      "target": "torch._engine_run_backward",
+      "metadata": {"comment": "grad calls engine's backward function"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._dynamo.eval_frame.OptimizedModule.forward",
+      "target": "torch._dynamo.eval_frame.OptimizedModule.__forward",
+      "metadata": {"comment": "OptimizedModule.forward delegates to __forward"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._C._dynamo.eval_frame.set_eval_frame",
+      "metadata": {"comment": "eval_frame uses C evaluation frame hook"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._C._autograd._saved_tensors_hooks_set_tracing",
+      "metadata": {"comment": "eval_frame manages autograd hooks"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.compile_fx.compile_fx_aot",
+      "target": "torch._dynamo",
+      "metadata": {"comment": "compile_fx_aot uses dynamo for compilation"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.compile_fx.compile_fx",
+      "target": "torch._inductor.lowering",
+      "metadata": {"comment": "compile_fx uses lowering for code generation"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.graph.lower",
+      "target": "torch._inductor.lowering",
+      "metadata": {"comment": "graph.lower uses lowering module"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.forward",
+      "target": "torch.nn.Module.__call__",
+      "metadata": {"comment": "Module.forward is called via __call__"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.__call__",
+      "target": "torch.nn.modules.module.Module._slow_forward",
+      "metadata": {"comment": "__call__ delegates to _slow_forward"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.__call__",
+      "target": "torch.nn.modules.module.Module._forward_impl",
+      "metadata": {"comment": "__call__ delegates to _forward_impl"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.zero_grad",
+      "target": "torch.autograd.backward",
+      "metadata": {"comment": "zero_grad triggers backward with no gradients"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.parameters",
+      "target": "torch.nn.parameter.Parameter",
+      "metadata": {"comment": "parameters returns Parameter objects"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.register_buffer",
+      "target": "torch.nn.modules.module._global_buffer_registration_hooks",
+      "metadata": {"comment": "register_buffer uses global hooks"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.register_parameter",
+      "target": "torch.nn.modules.module._global_parameter_registration_hooks",
+      "metadata": {"comment": "register_parameter uses global hooks"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.register_module",
+      "target": "torch.nn.modules.module._global_module_registration_hooks",
+      "metadata": {"comment": "register_module uses global hooks"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.register_forward_pre_hook",
+      "target": "torch.nn.modules.module._global_forward_pre_hooks",
+      "metadata": {"comment": "register_forward_pre_hook uses global hooks"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.register_forward_hook",
+      "target": "torch.nn.modules.module._global_forward_hooks",
+      "metadata": {"comment": "register_forward_hook uses global hooks"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.register_full_backward_pre_hook",
+      "target": "torch.nn.modules.module._global_backward_pre_hooks",
+      "metadata": {"comment": "register_full_backward_pre_hook uses global hooks"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.nn.Module.register_full_backward_hook",
+      "target": "torch.nn.modules.module._global_backward_hooks",
+      "metadata": {"comment": "register_full_backward_hook uses global hooks"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.autograd.Function.forward",
+      "target": "torch._C._FunctionBase.apply",
+      "metadata": {"comment": "Function.forward calls C++ apply method"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.autograd.Function.backward",
+      "target": "torch._C._FunctionBase.backward",
+      "metadata": {"comment": "Function.backward calls C++ backward method"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.autograd.Function.save_for_backward",
+      "target": "torch.autograd.function.FunctionCtx.save_for_backward",
+      "metadata": {"comment": "save_for_backward uses FunctionCtx"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.fx.Graph.append",
+      "target": "torch.fx.Node",
+      "metadata": {"comment": "Graph.append creates and adds Nodes"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.fx.GraphModule.forward",
+      "target": "torch.fx.Graph",
+      "metadata": {"comment": "GraphModule.forward uses Graph"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.fx.Tracer.trace",
+      "target": "torch.fx.proxy.Proxy",
+      "metadata": {"comment": "Tracer.trace creates Proxies"}
+    },
+    {
+      "type": "calls",
+      "source": "torch.fx.graph_module._forward_from_src",
+      "target": "torch.fx.graph_module._method_from_src",
+      "metadata": {"comment": "Generates forward method from source code"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.graph.lower",
+      "target": "torch._inductor.codecache",
+      "metadata": {"comment": "graph.lower uses codecache for compilation"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._dynamo",
+      "metadata": {"comment": "compile_fx integrates with TorchDynamo"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._dynamo.compiled_autograd",
+      "metadata": {"comment": "compile_fx uses compiled autograd"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.graph.lower",
+      "target": "torch._inductor.decomposition",
+      "metadata": {"comment": "graph.lower uses decomposition"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.graph.lower",
+      "target": "torch._inductor.ops_handler",
+      "metadata": {"comment": "graph.lower uses ops handler"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.scheduler",
+      "target": "torch._inductor.memory",
+      "metadata": {"comment": "scheduler uses memory management"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._inductor.compiler_bisector",
+      "target": "torch._dynamo",
+      "metadata": {"comment": "compiler_bisector uses dynamo for debugging"}
+    },
+    {
+      "type": "calls",
+      "source": "torch._dynamo.eval_frame.OptimizedModule",
+      "target": "torch.nn.Module",
+      "metadata": {"comment": "OptimizedModule inherits from Module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch",
+      "target": "torch._C",
+      "metadata": {"comment": "torch imports C extension"}
+    },
+    {
+      "type": "imports",
+      "source": "torch",
+      "target": "torch._ops",
+      "metadata": {"comment": "torch imports ops module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch",
+      "target": "torch._dynamo",
+      "metadata": {"comment": "torch imports dynamo module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch",
+      "target": "torch._inductor",
+      "metadata": {"comment": "torch imports inductor module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch",
+      "target": "torch.fx",
+      "metadata": {"comment": "torch imports FX module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch",
+      "target": "torch.autograd",
+      "metadata": {"comment": "torch imports autograd module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch",
+      "target": "torch.optim",
+      "metadata": {"comment": "torch imports optim module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.nn",
+      "target": "torch.nn.functional",
+      "metadata": {"comment": "nn imports functional"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.nn",
+      "target": "torch.nn.modules.module",
+      "metadata": {"comment": "nn imports Module"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.nn",
+      "target": "torch.nn.parameter",
+      "metadata": {"comment": "nn imports Parameter"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.optim.optimizer",
+      "target": "torch.nn.parameter",
+      "metadata": {"comment": "Optimizer uses Parameter"}
+    },
+    {
+      "type": "imports",
+      "source": "torch.optim.lr_scheduler",
+      "target": "torch.optim.optimizer",
+      "metadata": {"comment": "LRScheduler inherits from Optimizer"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo",
+      "target": "torch._dynamo.config",
+      "metadata": {"comment": "dynamo uses config"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo",
+      "target": "torch._dynamo.eval_frame",
+      "metadata": {"comment": "dynamo uses eval_frame"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo",
+      "target": "torch._dynamo.convert_frame",
+      "metadata": {"comment": "dynamo uses convert_frame"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo",
+      "target": "torch._dynamo.callback",
+      "metadata": {"comment": "dynamo uses callbacks"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._inductor.config",
+      "metadata": {"comment": "inductor uses config"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._inductor.compile_fx",
+      "metadata": {"comment": "inductor uses compile_fx"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._inductor.graph",
+      "metadata": {"comment": "inductor uses graph"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._inductor.lowering",
+      "metadata": {"comment": "inductor uses lowering"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._inductor.ir",
+      "metadata": {"comment": "inductor uses IR"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._inductor.codecache",
+      "metadata": {"comment": "inductor uses codecache"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._dynamo",
+      "metadata": {"comment": "inductor uses dynamo"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._dynamo.compiled_autograd",
+      "metadata": {"comment": "inductor uses compiled autograd"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch.fx",
+      "metadata": {"comment": "inductor uses FX"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch.autograd",
+      "metadata": {"comment": "inductor uses autograd"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch.export",
+      "metadata": {"comment": "inductor uses export"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo",
+      "target": "torch._C._dynamo",
+      "metadata": {"comment": "dynamo uses C dynamo extension"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo",
+      "target": "torch._C._autograd",
+      "metadata": {"comment": "dynamo uses C autograd extension"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor",
+      "target": "torch._C._inductor",
+      "metadata": {"comment": "inductor uses C inductor extension"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._dynamo.eval_frame",
+      "target": "torch._dynamo",
+      "metadata": {"comment": "eval_frame is part of dynamo"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.compile_fx",
+      "target": "torch._inductor",
+      "metadata": {"comment": "compile_fx is part of inductor"}
+    },
+    {
+      "type": "imports",
+      "source": "torch._inductor.graph",
+      "target": "torch._inductor",
+      "metadata": {"comment": "graph is part of inductor"}
+    }
+  ]
+}

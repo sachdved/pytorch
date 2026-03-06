@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyTorch Knowledge Graph Explorer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+        #app {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+        #controls {
+            width: 300px;
+            background-color: #2d2d2d;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 1px solid #444;
+        }
+        #visualization {
+            flex: 1;
+            background-color: #121212;
+            position: relative;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-top: 0;
+            color: #4fc3f7;
+        }
+        .control-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            background-color: #3d3d3d;
+            border: 1px solid #555;
+            color: #e0e0e0;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2196f3;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0d47a1;
+        }
+        #graph-container {
+            width: 100%;
+            height: 100%;
+        }
+        .node {
+            cursor: pointer;
+        }
+        .node:hover {
+            stroke: #4fc3f7;
+            stroke-width: 2px;
+        }
+        .node-label {
+            font-size: 10px;
+            pointer-events: none;
+        }
+        .edge {
+            stroke: #666;
+            stroke-opacity: 0.6;
+        }
+        .highlighted {
+            stroke: #ffeb3b;
+            stroke-width: 3px;
+        }
+        .tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            pointer-events: none;
+            font-size: 12px;
+            z-index: 1000;
+            max-width: 300px;
+        }
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+        }
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            border-radius: 50%;
+        }
+        .node-type {
+            margin-top: 15px;
+        }
+        .node-type h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            color: #4fc3f7;
+        }
+        .info-panel {
+            background-color: #3d3d3d;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .info-panel p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="controls">
+            <h1>PyTorch Knowledge Graph Explorer</h1>
+
+            <div class="control-group">
+                <label for="file-input">Load Knowledge Graph JSON:</label>
+                <input type="file" id="file-input" accept=".json">
+            </div>
+
+            <div class="control-group">
+                <label for="max-nodes">Max Nodes to Display:</label>
+                <input type="number" id="max-nodes" value="200" min="10" max="1000">
+            </div>
+
+            <div class="control-group">
+                <label for="hop-distance">Hop Distance:</label>
+                <input type="number" id="hop-distance" value="1" min="1" max="5">
+            </div>
+
+            <div class="control-group">
+                <label for="node-type-filter">Filter by Node Type:</label>
+                <select id="node-type-filter">
+                    <option value="all">All Types</option>
+                    <option value="class">Class</option>
+                    <option value="function">Function</option>
+                    <option value="method">Method</option>
+                    <option value="file">File</option>
+                    <option value="module">Module</option>
+                    <option value="root_module">Root Module</option>
+                </select>
+            </div>
+
+            <button id="reset-view">Reset View</button>
+            <button id="zoom-in">Zoom In</button>
+            <button id="zoom-out">Zoom Out</button>
+
+            <div class="node-type">
+                <h3>Node Type Legend</h3>
+                <div class="legend" id="legend-container">
+                    <!-- Legend items will be populated here -->
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <p><strong>Nodes:</strong> <span id="node-count">0</span></p>
+                <p><strong>Edges:</strong> <span id="edge-count">0</span></p>
+                <p><strong>Zoom Level:</strong> <span id="zoom-level">1.0</span></p>
+                <p><strong>Selected Node:</strong> <span id="selected-node">None</span></p>
+            </div>
+        </div>
+
+        <div id="visualization">
+            <div id="graph-container"></div>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

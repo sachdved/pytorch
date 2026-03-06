@@ -1,0 +1,25 @@
+{
+  "name": "pytorch-knowledge-graph-explorer",
+  "version": "1.0.0",
+  "description": "Interactive visualization tool for PyTorch knowledge graphs",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "http-server src/",
+    "build": "echo 'Build process not needed for this static site'"
+  },
+  "keywords": [
+    "pytorch",
+    "knowledge-graph",
+    "visualization",
+    "d3js",
+    "interactive"
+  ],
+  "author": "PyTorch Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "d3": "^7.8.5"
+  }
+}

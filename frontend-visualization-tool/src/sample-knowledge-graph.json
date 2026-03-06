@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "torch.nn.Module",
+      "name": "Module",
+      "type": "class",
+      "path": "torch/nn/module.py",
+      "description": "Base class for all neural network modules"
+    },
+    {
+      "id": "torch.nn.Linear",
+      "name": "Linear",
+      "type": "class",
+      "path": "torch/nn/linear.py",
+      "description": "Applies a linear transformation to the incoming data"
+    },
+    {
+      "id": "torch.nn.Conv2d",
+      "name": "Conv2d",
+      "type": "class",
+      "path": "torch/nn/conv.py",
+      "description": "Applies a 2D convolution over an input signal"
+    },
+    {
+      "id": "torch.nn.functional",
+      "name": "functional",
+      "type": "module",
+      "path": "torch/nn/functional.py",
+      "description": "Functional interface for neural network operations"
+    },
+    {
+      "id": "torch.optim.Adam",
+      "name": "Adam",
+      "type": "class",
+      "path": "torch/optim/adam.py",
+      "description": "Adam optimizer"
+    },
+    {
+      "id": "torch.tensor",
+      "name": "tensor",
+      "type": "function",
+      "path": "torch/tensor.py",
+      "description": "Creates a tensor"
+    },
+    {
+      "id": "torch.nn.Module.forward",
+      "name": "forward",
+      "type": "method",
+      "path": "torch/nn/module.py",
+      "description": "Forward pass method"
+    }
+  ],
+  "edges": [
+    {
+      "source": "torch.nn.Linear",
+      "target": "torch.nn.Module",
+      "type": "inheritance"
+    },
+    {
+      "source": "torch.nn.Conv2d",
+      "target": "torch.nn.Module",
+      "type": "inheritance"
+    },
+    {
+      "source": "torch.nn.Linear",
+      "target": "torch.nn.functional",
+      "type": "uses"
+    },
+    {
+      "source": "torch.optim.Adam",
+      "target": "torch.nn.Module",
+      "type": "uses"
+    },
+    {
+      "source": "torch.tensor",
+      "target": "torch.nn.Module",
+      "type": "uses"
+    },
+    {
+      "source": "torch.nn.Module.forward",
+      "target": "torch.nn.Linear",
+      "type": "calls"
+    }
+  ]
+}

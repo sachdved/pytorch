@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyTorch Knowledge Graph Explorer - Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .instructions {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .file-upload {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px dashed #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .file-upload input {
+            margin-top: 10px;
+        }
+        .demo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .demo button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .demo button:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PyTorch Knowledge Graph Explorer - Test</h1>
+
+        <div class="instructions">
+            <h2>How to Test the Visualization Tool</h2>
+            <ol>
+                <li>Click "Open Sample Graph" to load a sample knowledge graph</li>
+                <li>Try adjusting the settings in the control panel</li>
+                <li>Click on nodes to see information</li>
+                <li>Use zoom buttons or mouse wheel to zoom in/out</li>
+                <li>Drag nodes to reposition them</li>
+            </ol>
+        </div>
+
+        <div class="file-upload">
+            <h3>Load Your Own Knowledge Graph</h3>
+            <p>Click below to load a knowledge graph JSON file:</p>
+            <input type="file" id="file-input" accept=".json">
+        </div>
+
+        <div class="demo">
+            <h3>Quick Start Demo</h3>
+            <button onclick="loadSampleGraph()">Load Sample Graph</button>
+            <button onclick="resetView()">Reset View</button>
+        </div>
+
+        <div id="visualization" style="width: 100%; height: 500px; background-color: #121212; border: 1px solid #444;"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        // Simple test to verify the structure works
+        function loadSampleGraph() {
+            // This would normally load a JSON file, but for testing we'll just create a simple visualization
+            const container = document.getElementById('visualization');
+            container.innerHTML = '<div style="color: white; padding: 20px;">Sample graph visualization would appear here. In a full implementation, this would show the actual knowledge graph.</div>';
+
+            // Create a basic sample visualization
+            const svg = d3.select("#visualization")
+                .append("svg")
+                .attr("width", "100%")
+                .attr("height", "100%");
+
+            // Add some sample nodes
+            const nodes = [
+                {x: 100, y: 100, name: "Module", type: "class"},
+                {x: 200, y: 200, name: "Linear", type: "class"},
+                {x: 300, y: 100, name: "Conv2d", type: "class"}
+            ];
+
+            const links = [
+                {source: 0, target: 1},
+                {source: 0, target: 2}
+            ];
+
+            // Add links
+            svg.selectAll("line")
+                .data(links)
+                .enter()
+                .append("line")
+                .attr("x1", d => nodes[d.source].x)
+                .attr("y1", d => nodes[d.source].y)
+                .attr("x2", d => nodes[d.target].x)
+                .attr("y2", d => nodes[d.target].y)
+                .attr("stroke", "#666")
+                .attr("stroke-width", 1);
+
+            // Add nodes
+            svg.selectAll("circle")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y)
+                .attr("r", 10)
+                .attr("fill", "#9B59B6");
+
+            // Add labels
+            svg.selectAll("text")
+                .data(nodes)
+                .enter()
+                .append("text")
+                .attr("x", d => d.x)
+                .attr("y", d => d.y)
+                .attr("text-anchor", "middle")
+                .attr("dy", 4)
+                .attr("font-size", "10px")
+                .attr("fill", "white")
+                .text(d => d.name);
+        }
+
+        function resetView() {
+            document.getElementById('visualization').innerHTML = '';
+        }
+
+        // Initialize with a sample
+        window.onload = function() {
+            loadSampleGraph();
+        };
+    </script>
+</body>
+</html>
